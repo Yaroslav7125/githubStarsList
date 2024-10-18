@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="flex flex-col justify-center">
-      <h1>{page}</h1>
+      <h1 className="m-auto p-2">{page}</h1>
       {isLoading ? <Loader className="m-auto" /> : <RepositoriesList />}
       <div className="flex justify-between p-2">
         <button onClick={() => fetchData(page - 1)} disabled={page == 1}>
